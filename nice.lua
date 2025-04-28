@@ -25,8 +25,8 @@ PearlnightblueIdentity.TextSize = 27.000
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local recv_role = ReplicatedStorage.Network.match.recv_role
-recv_role.OnClientEvent:Connect(function(newRole)
-    role = newRole
+recv_role.OnClientEvent:Connect(function(newrole)
+    role = newrole -- was starting to pmo
     PearlnightblueIdentity.Text = "ROLE: " .. role 
     if role == "Seeker" then
     print'seeker'
