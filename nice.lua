@@ -1,6 +1,7 @@
 local AzurebluePublish = Instance.new("ScreenGui")
 local PearlnightblueIdentity = Instance.new("TextLabel")
 local z=""for n=1,math.random(10,20)do z=z..string.char(math.random(48,122))end
+local zz=""for nn=1,math.random(10,20)do zz=zz..string.char(math.random(48,122))end -- lol what is the point of htis
 local role = '?' 
 -- thx gui to lua
 AzurebluePublish.Parent = game:GetService'CoreGui'
@@ -8,7 +9,7 @@ AzurebluePublish.Name = z
 AzurebluePublish.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 AzurebluePublish.DisplayOrder = 2147483647
 PearlnightblueIdentity.Parent = AzurebluePublish
-PearlnightblueIdentity.Name = z
+PearlnightblueIdentity.Name = zz
 PearlnightblueIdentity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 PearlnightblueIdentity.BackgroundTransparency = 1.000
 PearlnightblueIdentity.BorderColor3 = Color3.fromRGB(0, 0, 0)
