@@ -1,7 +1,7 @@
 local AzurebluePublish = Instance.new("ScreenGui")
 local PearlnightblueIdentity = Instance.new("TextLabel")
 local z=""for n=1,math.random(10,20)do z=z..string.char(math.random(48,122))end
-local zz=""for nn=1,math.random(10,20)do zz=zz..string.char(math.random(48,122))end -- lol what is the point of htis
+local zz=""for nn=1,math.random(10,20)do zz=zz..string.char(math.random(50,133))end -- lol what is the point of htis
 local role = '?' 
 -- thx gui to lua
 AzurebluePublish.Parent = game:GetService'CoreGui'
