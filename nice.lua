@@ -1,5 +1,7 @@
 local AzurebluePublish = Instance.new("ScreenGui")
 local PearlnightblueIdentity = Instance.new("TextLabel")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local recv_role = ReplicatedStorage.Network.match.recv_role
 local z=""for n=1,math.random(10,20)do z=z..string.char(math.random(48,122))end
 local role = '?' 
 -- thx gui to lua
@@ -21,16 +23,11 @@ PearlnightblueIdentity.Font = Enum.Font.Arcade
 PearlnightblueIdentity.Text = "ROLE: " .. role
 PearlnightblueIdentity.TextColor3 = Color3.fromRGB(255, 255, 255)
 PearlnightblueIdentity.TextSize = 27.000
-
-
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local recv_role = ReplicatedStorage.Network.match.recv_role
 recv_role.OnClientEvent:Connect(function(newrole)
     role = newrole -- was starting to pmo
     PearlnightblueIdentity.Text = "ROLE: " .. role 
     if role == "Seeker" then
     print'seeker'
-
     elseif role == "Hider" then
     print'hider'
     end
